@@ -95,7 +95,6 @@ public class NumberTest {
 		fail();
 	}
 	
-
 	@Test(expected = NumberFormatException.class)
 	@Ignore
 	public void set_setWithBaseTooSmall_baseFixed() {
@@ -104,5 +103,8 @@ public class NumberTest {
 		assertEquals("5", number.get(1));
 		fail();
 	}
+	
+	
+	
 	
 }
