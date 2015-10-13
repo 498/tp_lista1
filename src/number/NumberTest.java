@@ -104,7 +104,14 @@ public class NumberTest {
 		fail();
 	}
 	
-	
+	@Test(expected = NumberFormatException.class)
+	@Ignore
+	public void set_setWithBaseTooBig_baseFixed() {
+		number.set(5);
+		// to przechodzi bo radix=10 is used instead
+		assertEquals("5", number.get(255));
+		fail();
+	}
 	
 	
 }
